@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="css/style.css" class="style" />
+    <link
+      rel="stylesheet"
+      href="../../_vendor/material-icons/css/materialdesignicons.min.css"
+      onerror="this.href='https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css'"
+      class="style"
+    />
+
+    <title>Anteng Web Greeter Theme</title>
+  </head>
+
+  <body>
+    <div id="background"></div>
+
+    <div id="top-container" tabindex="0">
+      <div id="datetime">
+        <h1 id="time">19:28</h1>
+        <p id="date">Jumat, 15 Februari 2024</p>
+      </div>
+      <div class="toolbar toolbar-right">
+        <div id="battery-icon"></div>
+        <p id="battery-label"></p>
+      </div>
+    </div>
+
+    <div id="bottom-container" tabindex="0">
+      <div id="form">
+        <div id="user-image">
+          <div id="background-image">
+            <span class="mdi mdi-account"></span>
+          </div>
+          <img src="" />
+        </div>
+        <div id="user-container">
+          <p id="user-label"></p>
+          <div id="user-list">
+            <button id="btn-user-list" class="btn">
+              <span class="mdi mdi-chevron-down mdi-24px"></span>
+            </button>
+            <ul id="users-dropdown" class="dropdown hide"></ul>
+          </div>
+        </div>
+        <div id="pass-container">
+          <input id="pass-input" type="password" placeholder="Password" />
+          <span id="show-pass" class="mdi mdi-eye-outline"></span>
+        </div>
+        <div id="response" class="hide"></div>
+      </div>
+      <div class="toolbar-container toolbar-right">
+        <div class="toolbar" id="session-container">
+          <p id="session-label"></p>
+          <div id="session-list">
+            <ul id="sessions-dropdown" class="dropdown hide"></ul>
+            <button id="btn-session-list" class="btn">
+              <span class="mdi mdi-chevron-up mdi-16px"></span>
+            </button>
+          </div>
+        </div>
+        <div class="toolbar">
+          <div id="system-power">
+            <button id="shutdown-btn" class="btn" title="shutdown">
+              <span class="mdi mdi-power"></span>
+            </button>
+            <button id="restart-btn" class="btn" title="restart">
+              <span class="mdi mdi-restart"></span>
+            </button>
+            <button id="suspend-btn" class="btn" title="suspend">
+              <span class="mdi mdi-power-sleep"></span>
+            </button>
+            <button id="hibernate-btn" class="btn" title="hibernate">
+              <span class="mdi mdi-power-cycle"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
